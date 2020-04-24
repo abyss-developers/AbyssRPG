@@ -13,10 +13,25 @@ def absolute_path(path: str) -> str:
     """Returns the absolute path of a given path based on this file"""
     return os.path.join(os.path.dirname(__file__), path)
 
+class dialogue:
+    def __init__(self, speaker, dialogue_text):
+        self.speaker = speaker
+        self.text = dialogue_text
+        self.dialogue_body = pygame.Rect(0,50,600,50)
+
+    def show_dialogue(self):
+        pygame.draw.rect(screen, red, self.dialogue_body)
+        print("{}:{}".format(self.speaker,self.text))
+        
+
 def redraw_game_window():
     screen.fill(white)
+    debug.show_dialogue()
 
 white = (91, 91, 91)
+red = (250,250,250)
+
+debug = dialogue("jason","hello")
 
 while True:
     for event in pygame.event.get():
