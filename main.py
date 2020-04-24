@@ -1,4 +1,4 @@
-import pygame, os, sys
+import pygame, sys
 from framework import *
 
 pygame.init()
@@ -14,18 +14,22 @@ class dialogue:
     def __init__(self, speaker, dialogue_text):
         self.speaker = speaker
         self.text = dialogue_text
-        self.dialogue_body = pygame.Rect(0,50,600,50)
+        self.dialogue_rect = pygame.Rect(50,50,600,50)
+        self.game_font = pygame.font.Font("freesansbold.ttf",32)
 
     def show_dialogue(self):
-        pygame.draw.rect(screen, red, self.dialogue_body)
+        pygame.draw.rect(screen, gray, self.dialogue_rect)
+        speaker_text = self.game_font.render(self.speaker, True, gray)
+        screen.blit(speaker_text,(100,100))
+
         print("{}:{}".format(self.speaker,self.text))
 
 def redraw_game_window():
-    screen.fill(white)
+    screen.fill(tinted_white)
     debug.show_dialogue()
 
-white = (91, 91, 91)
-red = (250,250,250)
+tinted_white = (91, 91, 91)
+gray = (250,250,250)
 
 debug = dialogue("jason","hello")
 
