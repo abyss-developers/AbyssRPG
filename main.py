@@ -21,8 +21,7 @@ class dialogue:
 
     def show_dialogue(self):
         pygame.draw.rect(screen, red, self.dialogue_body)
-        print("{}:{}".format(self.speaker,self.text))
-        
+        print("{}:{}".format(self.speaker,self.text))        
 
 def redraw_game_window():
     screen.fill(white)
@@ -43,4 +42,3 @@ while True:
 
     clock.tick(60)
     pygame.display.flip()
-
