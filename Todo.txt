@@ -1,0 +1,5 @@
+First things to do:
+
+Player class (Controls the player and also scrolls through some sprites)
+First map (What I'm planning to do for this is just blit an image but have like hitboxes (hitboxes as rect))
+Player and NPC dialogue system (When you walk into a NPC's range a textbox appears)
