@@ -4,4 +4,4 @@ Stay tuned! Lol
 uh, hi Jason uwu- eeeeeee I'm so stupid 0-0
 <hr>
 <h1>hi this is poopee</h1>
-<p>I am fully aware that this is not meant for html lmao</p>
+<p>I am fully aware that this is not meant for html LOLOLOL</p>
