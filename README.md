@@ -12,4 +12,3 @@ Feature | Yes?
 Amazing storytelling | No
 Good drawings | No
 A working game | No
-Ability to give viewers early onsight alzhimers | Probably not
