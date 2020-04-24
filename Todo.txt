@@ -10,3 +10,7 @@ Player and NPC dialogue system (When you walk into a NPC's range a textbox appea
     Make it 16x whatever. Just make sure one of these values are 16, or a multiple of 16
     To export, click Export, and put the scale to 4.0x
     Choose your export settings and done
+
+General Storyline (Forgive me for writing this in a fucking TXT file)
+
+Player (We ask for their name)
