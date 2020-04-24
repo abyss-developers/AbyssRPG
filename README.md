@@ -1,4 +1,4 @@
 # Code-Elephant
 Secret! haha. This is just a project between me and Enrica... not sure what to make in it, but oh well we'll see! :D <br>
 Stay tuned! Lol
-uh, hi Jason uwu
+uh, hi Jason uwu- eeeeeee I'm so stupid 0-0
