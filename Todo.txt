@@ -12,5 +12,27 @@ Player and NPC dialogue system (When you walk into a NPC's range a textbox appea
     Choose your export settings and done
 
 General Storyline (Forgive me for writing this in a fucking TXT file)
+response: nonono it's fine
 
 Player (We ask for their name)
+Player goes and walks around an area
+
+When player meets Jax:
+Jax: "Hey! I'm Jax, persona for the user Jaqarx, formerly known as draqarim." 
+Jax: "With this little thing of a game, basically run around the map and talk to other npcs."
+Jax: "See what stories they can tell you! I'll be here if you need any help."
+Jax: "Goodluck (player name)!"
+
+When player meets Ace:
+Ace: "H- h- ey!"
+Ace: "Sor- ryy I'm vvv- vv- eeeer- rryy glitcchy."
+Ace: "Jaaaqqaa- rrrxx made me forrrrr a pro- je- je- ject but neglecte- d me."
+Ace: "It's okayyy though, I'mm go- ooi- nnn- g to get re- wwor- kke- d."
+Ace: "Best if youuu le- a- aa- v- e mmeee, havin- g technic- al di- ff- ffi- culti- e- s."
+
+When player meets Kwar:
+Kwar: "RAuaUGHHSS!!"
+
+When player meets ____:
+
+When player meets ____:
