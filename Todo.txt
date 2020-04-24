@@ -3,3 +3,10 @@ First things to do:
 Player class (Controls the player and also scrolls through some sprites)
 First map (What I'm planning to do for this is just blit an image but have like hitboxes (hitboxes as rect))
 Player and NPC dialogue system (When you walk into a NPC's range a textbox appears)
+
+    How to use sprites (Tutorial by Jasoni)
+    Go to https://piskelapp.com
+    Click Resize (on right hand side of screen)
+    Make it 16x whatever. Just make sure one of these values are 16, or a multiple of 16
+    To export, click Export, and put the scale to 4.0x
+    Choose your export settings and done
