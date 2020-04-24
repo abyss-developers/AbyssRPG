@@ -1,4 +1,5 @@
 import pygame, os, sys
+from framework import *
 
 pygame.init()
 clock = pygame.time.Clock()
@@ -9,10 +10,6 @@ screen_width = 1024
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Project Elephant")
 
-def absolute_path(path: str) -> str:
-    """Returns the absolute path of a given path based on this file"""
-    return os.path.join(os.path.dirname(__file__), path)
-
 class dialogue:
     def __init__(self, speaker, dialogue_text):
         self.speaker = speaker
@@ -21,7 +18,7 @@ class dialogue:
 
     def show_dialogue(self):
         pygame.draw.rect(screen, red, self.dialogue_body)
-        print("{}:{}".format(self.speaker,self.text))        
+        print("{}:{}".format(self.speaker,self.text))
 
 def redraw_game_window():
     screen.fill(white)
