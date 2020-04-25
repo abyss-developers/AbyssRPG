@@ -3,6 +3,7 @@ from settings import *
 
 pygame.init()
 clock = pygame.time.Clock()
+pygame.key.set_repeat(500, 100) # If you hold down a button for 500 milli, repeat every 100 millie
 
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("AbyssRPG Alpha 0.0.0")
@@ -15,14 +16,22 @@ class Player():
     def __init__(self, x, y):
         self.x = x
         self.y = y
+        self.blitPlayer()
 
     def blitPlayer(self):
-        self.hitbox = pygame.Rect(self.x * tilesize, self.y * tilesize, tilesize, tilesize)
-        self.draw = pygame.draw.rect(screen, gray, self.hitbox)
+        self.playerHitbox = pygame.Rect(self.x * tilesize, self.y * tilesize, tilesize, tilesize)
+        self.drawrect = pygame.draw.rect(screen, gray, self.playerHitbox)
 
     def move(self, dx=0, dy=0): # 0 by default
         self.x += dx
         self.y += dy
+
+class Wall():
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.wallHitbox = pygame.Rect(self.x * tilesize, self.y * tilesize, tilesize, tilesize)
+        self.drawrect = pygame.draw.rect(screen, gray, self.wallHitbox)
 
 def draw_grid():
     for x in range(0, screen_width, tilesize):
@@ -34,6 +43,8 @@ def graphics():
     screen.fill(tinted_white)
     draw_grid()
     player.blitPlayer()
+    for x in range(10,20):
+        Wall(x, 5)
 
 #--Game Variables--#
 player = Player(3, 0)
