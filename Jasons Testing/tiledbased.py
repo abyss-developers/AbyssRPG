@@ -56,7 +56,7 @@ def graphics():
         Wall(x, 5)
 
 #--Game Variables--#
-player = Player(3, 0)
+player = Player(5, 0)
 walls = pygame.sprite.Group()
 
 while True:
