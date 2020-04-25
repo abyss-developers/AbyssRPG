@@ -18,20 +18,29 @@ class Player():
         self.y = y
         self.blitPlayer()
 
+    def collisions(self, dx=0, dy=0):
+        for i in walls:
+            if i.x == self.x + dx and i.y == self.y + dy:
+                return True
+        return False
+
     def blitPlayer(self):
         self.playerHitbox = pygame.Rect(self.x * tilesize, self.y * tilesize, tilesize, tilesize)
-        self.drawrect = pygame.draw.rect(screen, gray, self.playerHitbox)
+        self.drawrect = pygame.draw.rect(screen, red, self.playerHitbox)
 
     def move(self, dx=0, dy=0): # 0 by default
-        self.x += dx
-        self.y += dy
+        if not self.collisions(dx, dy):
+            self.x += dx
+            self.y += dy
 
-class Wall():
+class Wall(pygame.sprite.Sprite):
     def __init__(self, x, y):
         self.x = x
         self.y = y
         self.wallHitbox = pygame.Rect(self.x * tilesize, self.y * tilesize, tilesize, tilesize)
         self.drawrect = pygame.draw.rect(screen, gray, self.wallHitbox)
+        pygame.sprite.Sprite.__init__(self, walls)
+
 
 def draw_grid():
     for x in range(0, screen_width, tilesize):
@@ -40,7 +49,7 @@ def draw_grid():
         pygame.draw.line(screen, gray, (0, y), (screen_width, y))
 
 def graphics():
-    screen.fill(tinted_white)
+    screen.fill(dark_gray)
     draw_grid()
     player.blitPlayer()
     for x in range(10,20):
@@ -48,6 +57,7 @@ def graphics():
 
 #--Game Variables--#
 player = Player(3, 0)
+walls = pygame.sprite.Group()
 
 while True:
     for event in pygame.event.get():
