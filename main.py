@@ -20,9 +20,9 @@ class dialogue:
     def show_dialogue(self):
         pygame.draw.rect(screen, gray, self.dialogue_rect)
         speaker_text = self.game_font.render(self.speaker, True, gray)
-        screen.blit(speaker_text,(100,100))
+        screen.blit(speaker_text,(100, 100))
 
-        print("{}:{}".format(self.speaker,self.text))
+        print("{}:{}".format(self.speaker, self.text))
 
 def redraw_game_window():
     screen.fill(tinted_white)
