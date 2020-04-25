@@ -15,7 +15,7 @@ General Storyline (Forgive me for writing this in a fucking TXT file)
 response: nonono it's fine
 
 Player (We ask for their name)
-Player goes and walks around an area
+Player goes and walks aroud an area
 
 When player meets Jax:
 Jax: "Hey! I'm Jax, persona for the user Jaqarx, formerly known as draqarim." 
@@ -33,6 +33,18 @@ Ace: "Best if youuu le- a- aa- v- e mmeee, havin- g technic- al di- ff- ffi- cul
 When player meets Kwar:
 Kwar: "RAuaUGHHSS!!"
 
-When player meets ____:
+When player meets Park:
+Park: "Hey! I'm Park."
+Park: "I am the exact replica of the person who made this game,"
+Park: "Along with Ace here. We are the self inserts of the game."
+Park: "That's a bad thing? Oh well... I mean, we're gonna get scrapped anyways..."
+
+Player chooses: "I'm sorry..."
+    Park: "Oh no! Don't be sorry. We will still be here for you.
+Player chooses: "Why?"
+    Park: "Well... as you saw with Ace..."
+    Park: "The devs are too busy to maintain us.
+
+Park: "Anyways, you should better get going. Have fun!"
 
 When player meets ____:
