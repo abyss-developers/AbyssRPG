@@ -62,7 +62,7 @@ Menu
 Delivery
     (Brings them to a page where they can choose between our delivery portals
     (Grubhub, BeyondMenu, some other one that I forgot))
-About
+Contact
     (Talks about our resturant, may or may not credit ourselves 0-0)
 
 Some things to add probably: The bottom bar (I'll show you Enrica)
