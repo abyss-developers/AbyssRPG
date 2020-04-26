@@ -11,8 +11,7 @@ Player and NPC dialogue system (When you walk into a NPC's range a textbox appea
     To export, click Export, and put the scale to 4.0x
     Choose your export settings and done
 
-General Storyline (Forgive me for writing this in a fucking TXT file)
-response: nonono it's fine
+General Storyline
 
 Player (We ask for their name)
 Player goes and walks aroud an area
@@ -47,4 +46,4 @@ Player chooses: "Why?"
 
 Park: "Anyways, you should better get going. Have fun!"
 
-When player meets ____:
+When player meets :
