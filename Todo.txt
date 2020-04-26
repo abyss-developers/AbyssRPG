@@ -47,3 +47,22 @@ Player chooses: "Why?"
 Park: "Anyways, you should better get going. Have fun!"
 
 When player meets :
+
+
+Todo: Asian Wok Web Project
+
+Four pages (for now:)
+
+Home
+    (Includes a picture, buttons to go to Menu, our hours, phone number for calling,
+    make sure to add our signature "NO MSG" LMAO)
+Menu 
+    (I gotta whip up some fancy graphic design to make them a new menu cause our 
+    menu (sorry dad) looks awful lmao)
+Delivery
+    (Brings them to a page where they can choose between our delivery portals
+    (Grubhub, BeyondMenu, some other one that I forgot))
+About
+    (Talks about our resturant, may or may not credit ourselves 0-0)
+
+Some things to add probably: The bottom bar (I'll show you Enrica)
