@@ -1,0 +1,6 @@
+import pyautogui
+script = "Jason is amazing"
+
+for x in script.split():
+    pyautogui.write(x)
+    pyautogui.press("enter")
