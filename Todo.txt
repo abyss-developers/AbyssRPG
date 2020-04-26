@@ -14,7 +14,7 @@ Player and NPC dialogue system (When you walk into a NPC's range a textbox appea
 General Storyline
 
 Player (We ask for their name)
-Player goes and walks aroud an area
+Player goes and walks around an area
 
 When player meets Jax:
 Jax: "Hey! I'm Jax, persona for the user Jaqarx, formerly known as draqarim." 
