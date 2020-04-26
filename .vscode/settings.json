@@ -6,5 +6,5 @@
         "--extension-pkg-whitelist=pygame"  // The extension is "lxml" not "1xml"
     ],
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": true
 }
