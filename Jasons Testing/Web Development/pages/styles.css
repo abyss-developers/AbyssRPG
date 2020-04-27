@@ -18,6 +18,10 @@ header {
     text-align: center;
 }
 
+header .mobile {
+    display: none;
+}
+
 /* FEATURES */
 
 .features {
@@ -69,6 +73,18 @@ nav ul {
 nav li {    
     display: inline-block;
 }
+
+/* Responsive RULES */
+
+@media screen and (max-width: 725px) {
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+}
+
 header a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -76,16 +92,4 @@ header a {
     margin-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-
-@media screen and (max-width: 800px) {
-    .features {
-        background: pink;
-    }
-}
-@media screen and (max-width: 400px) {
-    .features {
-        background: red;
-    }
 }

@@ -1,5 +1,5 @@
 import pyautogui
-script = "I WROTE A PYTHON SCRIPT THAT SPAMS PEOPLE DO YOU HAVE ANYONE IN MIND"
+script = "WOULD YOU LIKE ME TO STOP"
 
 for x in script.split():
     pyautogui.write(x)
