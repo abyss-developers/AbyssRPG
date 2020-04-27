@@ -1,70 +1,42 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <title>My Page! Lol</title>
-    <style>
-        body {
-            background: rgb(58, 55, 66);
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header { 
-            background: black;
-            padding: 20px;
-        }
-        section {
-            background: white;
-            color: gray;
-            padding: 20px;
-            display: flex;
-            flex-direction: row;
-        }
-        footer {
-            background: black;
-            padding: 10px 20px;
-        }
-        div {
-            background:red;
-            margin: auto;
-            width: 100px;
-            height: 20px;
-        }
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-        li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="pages/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Locations</li>
-                <li>Contacts</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/menu.html">Menu</a></li>
+                <li class="logo"><a href="index.html">Artisan Bakery Logo</a></li>
+                <li><a href="pages/locations.html">Locations</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Title</h1>
     </header>   
-    <section>
-        <div>a</div>
-        <div>c</div>
-        <div>b</div>
+    <section class="features">
+        <figure>
+            <img src="pictures/breads.jpg" alt="Amazing fresh baked bread">
+            <figcaption><h4>Fresh baked bread</h4></figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/coffee.jpg" alt="Amazing fresh baked coffee? lmao">
+            <figcaption><h4>Home roasted coffee</h4></figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/goods.jpg" alt="home goods">
+            <figcaption><h4>Goods market</h4></figcaption>
+        </figure>
     </section>
-    <section>lower-section</section>
-    <footer>footer</footer>
-    
-    
-</body>
+    <footer>
+        123 Main Street Edwarsville, Washington • 425-234-1523 • contactus@artisansbakerycafe.com
+    </footer>
+    </body>
 
 </html>
 
