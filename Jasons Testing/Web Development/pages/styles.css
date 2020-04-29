@@ -12,7 +12,7 @@ header {
     height: 500px;
     background: black;
     background-image: url("../pictures/hero.jpg");
-    background-size: 100%;
+    background-size: 100%;  
     background-position: center;
     padding: 20px;
     text-align: center;

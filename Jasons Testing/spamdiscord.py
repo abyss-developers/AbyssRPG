@@ -1,5 +1,5 @@
 import pyautogui
-script = "WOULD YOU LIKE ME TO STOP"
+script = "@kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly "
 
 for x in script.split():
     pyautogui.write(x)
