@@ -25,11 +25,19 @@ body {
 }
 .sub-heading {
     background-color: #67ce96;
-    padding: 20px 50px;
+    padding: 20px 50px 20px 30px;
     text-align: center;
     font-size: 20px;
     color: white;
     display: inline-block;
+}
+.sub-heading:hover {
+    background-color: #37e3db;
+}
+a {
+    color: white;
+    text-decoration: none;
+
 }
 .dark-div {
     padding: 100px 30px;
