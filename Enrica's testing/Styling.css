@@ -5,7 +5,7 @@ body {
     color: #67ce96;
     border: solid;
     width: 20%;
-    align-self: left;
+    float: right;
     margin: 30px;
 }
 .non-dark-div {
@@ -99,6 +99,6 @@ a {
     background-color: #122134;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    width: 60%;
+    width: 50%;
     float: right;
 }
