@@ -45,6 +45,11 @@ body {
 .logo a {
     background-image: url("http://sonsandco.co.uk/wp-content/uploads/2018/06/Instagram-white-icon-300x300.png");
     display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    text-indent: -9999999px;
 
 }
 a {
