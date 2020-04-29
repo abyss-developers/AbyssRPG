@@ -67,6 +67,9 @@ body {
     text-decoration: none;
     text-indent: -9999999px;
 }
+#logo2 a:hover {
+    background-image: url("images/discord icon (hover).png")
+}
 .button {
     display: inline-block;
 }
