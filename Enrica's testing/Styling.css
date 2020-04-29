@@ -30,10 +30,6 @@ body {
     font-size: 50px;
     color: white;
 }
-.section:hover {
-    color: black;
-    background-color: #f5f2eb;
-}
 .sub-heading {
     background-color: #67ce96;
     padding: 20px 50px;
@@ -46,13 +42,10 @@ body {
 .sub-heading:hover {
     background-color: #37e3db;
 }
-.button {
-    background-color: #67ce96;
-    padding: 20px;
-    color: white;
-}
-.icon {
-    width: 3%;
+.logo a {
+    background-image: url("http://sonsandco.co.uk/wp-content/uploads/2018/06/Instagram-white-icon-300x300.png");
+    display: inline-block;
+
 }
 a {
     color: white;
