@@ -45,13 +45,15 @@ body {
 #logo1 a {
     background-image: url("http://sonsandco.co.uk/wp-content/uploads/2018/06/Instagram-white-icon-300x300.png");
     background-size: 100%;
-    display: inline-block;
     position: relative;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     text-decoration: none;
     text-indent: -9999999px;
+    float: left;
+    margin: 10px;
+    margin-left: 0;
 }
 #logo1 a:hover {
     background-image: url("images/instagram icon (hover).png")
@@ -59,19 +61,21 @@ body {
 #logo2 a{
     background-image: url("https://thesilphroad.com/img/icons/discord.png");
     background-size: 100%;
-    display: inline-block;
     position: relative;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     text-decoration: none;
     text-indent: -9999999px;
+    float: left;
+    margin: 10px;
+    
 }
 #logo2 a:hover {
     background-image: url("images/discord icon (hover).png")
 }
 .button {
-    display: inline-block;
+    width: 100%;
 }
 a {
     color: white;
