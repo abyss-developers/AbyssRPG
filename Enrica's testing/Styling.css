@@ -24,19 +24,11 @@ body {
     font-size: 60px;
     color: rgb(17, 17, 17);
 }
-.heading-type-1:hover {
-    color: black;
-    background-color: #f5f2eb;
-}
 .heading-type-2 {
     text-align: left;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     color: white;
-}
-.heading-type-2:hover {
-    color: black;
-    background-color: #f5f2eb;
 }
 .section:hover {
     color: black;
