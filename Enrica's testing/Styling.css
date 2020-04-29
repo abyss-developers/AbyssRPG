@@ -18,13 +18,25 @@ body {
 #signature {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
-.heading-type-1 {
+#heading-type-1 {
     text-align: left;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
     color: rgb(17, 17, 17);
 }
-.heading-type-2 {
+#heading-type-2 {
+    text-align: left;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+#heading-type-3 {
+    text-align: right;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color: rgb(17, 17, 17);
+}
+.heading-type-4 {
     text-align: left;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
@@ -87,4 +99,6 @@ a {
     background-color: #122134;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    float: right;
 }
