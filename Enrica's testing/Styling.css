@@ -54,6 +54,7 @@ body {
     float: left;
     margin: 10px;
     margin-left: 0;
+    top: -3px;
 }
 #logo1 a:hover {
     background-image: url("images/instagram icon (hover).png")
