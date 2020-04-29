@@ -68,7 +68,7 @@ body {
     text-indent: -9999999px;
 }
 .button {
-    float: right;
+    display: inline-block;
 }
 a {
     color: white;
