@@ -1,6 +1,13 @@
 body {
     background-color: #f5f2eb;
 }
+.accents {
+    color: #67ce96;
+    border: solid;
+    width: 20%;
+    align-self: left;
+    margin: 30px;
+}
 .non-dark-div {
     font-family: Arial, Helvetica, sans-serif;
     margin: 50px 30px;
@@ -11,17 +18,29 @@ body {
 #signature {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
-#heading1 {
+.heading-type-1 {
     text-align: left;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
     color: rgb(17, 17, 17);
 }
-#heading2 {
+.heading-type-1:hover {
+    color: black;
+    background-color: #f5f2eb;
+}
+.heading-type-2 {
     text-align: left;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     color: white;
+}
+.heading-type-2:hover {
+    color: black;
+    background-color: #f5f2eb;
+}
+.section:hover {
+    color: black;
+    background-color: #f5f2eb;
 }
 .sub-heading {
     background-color: #67ce96;
