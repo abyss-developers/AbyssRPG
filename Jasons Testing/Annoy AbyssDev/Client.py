@@ -18,13 +18,18 @@ light_grey = (200, 200, 200)
 bg_color = pygame.Color('grey12')
 game_font = pygame.font.Font("freesansbold.ttf", 20)
 
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            sys.exit()
-    
-    screen.fill(light_grey)
+def start_screen():
+    while True:
 
-    clock.tick(60)
-    pygame.display.flip()
+        screen.fill(light_grey)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+
+        clock.tick(60)
+        pygame.display.flip()
+
+start_screen()
