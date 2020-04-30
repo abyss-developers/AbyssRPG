@@ -86,10 +86,25 @@ body {
     text-indent: -9999999px;
     float: left;
     margin: 10px;
-    
 }
 #logo2 a:hover {
     background-image: url("images/discord icon (hover).png")
+}
+#logo3 a{
+    background-image: url("https://assets.ifttt.com/images/channels/33/icons/monochrome_large.png");
+    background-size: 100%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-indent: -9999999px;
+    float: left;
+    margin: 10px;
+    top: -3px;
+}
+#logo3 a:hover {
+    background-image: url("images/gmail icon (hover).png")
 }
 .button {
     width: 100%;
