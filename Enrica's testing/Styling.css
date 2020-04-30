@@ -5,10 +5,14 @@ body {
     color: #67ce96;
     border: solid;
     width: 20%;
-    float: right;
+    flex-direction: column;
     margin: 30px;
 }
-.non-dark-div {
+#non-dark-div1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 30px;
+}
+#non-dark-div2 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 50px 30px;
 }
@@ -94,7 +98,14 @@ a {
     color: white;
     text-decoration: none;
 }
-.dark-div {
+#dark-div1 {
+    padding: 100px 30px;
+    background-color: #122134;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+#dark-div2 {
     padding: 100px 30px;
     background-color: #122134;
     color: white;
