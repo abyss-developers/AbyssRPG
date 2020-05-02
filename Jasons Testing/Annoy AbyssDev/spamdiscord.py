@@ -1,8 +1,9 @@
 import pyautogui
-script = "@kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly @kelly "
+script = "e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e"
 
 for x in script.split():
-    pyautogui.write(x)
+    pyautogui.hotkey("ctrl", "t")
+    pyautogui.write("https://www.youtube.com/watch?v=mPVDGOVjRQ0")
     pyautogui.press("enter")
 
 #pyautogui.press("up")

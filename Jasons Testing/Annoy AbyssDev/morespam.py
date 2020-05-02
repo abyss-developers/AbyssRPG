@@ -8,11 +8,11 @@ while True:
         break
     pyautogui.write("**Water Rehydration Reminder**")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.write("This message is automatically sent by Jason's code to remind you that you need to stay hydrated.")
+    pyautogui.write("This has nothing to do with hydation. I just want to annoy you.")
     pyautogui.hotkey("shift", "enter")
     pyautogui.write("This message will sent in 5 more minutes.")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.write("Have a nice day!", interval=20)
+    pyautogui.write("Have a nice day!", interval=0.5)
     pyautogui.press("enter")
-    e += 1    
+    e += 1
     
