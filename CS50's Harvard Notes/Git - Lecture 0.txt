@@ -1,0 +1,25 @@
+Version Control
+
+- Git
+    Keeps track of changes to code
+    Synchronizes code between different people
+    Test changes to code without losing the original
+    Revert back to old versions of code
+
+- GitHub
+    Access to git repos on the internet
+    Contribute, use, collaborate
+
+- Git Commandline Commands
+    "git clone <url>" Takes a repository stored on somewhere else (e.g. Github) and will be downloaded on your own local PC
+    "git add <filename>" Tells Git that the next time we make a commit, we want to include these
+    "git commit -m "commit message"" Commits it to repo at the current moment (-m is a flag standing for "Message")
+        "git commit -am "commit message"" Adds to staging area AND commits
+    "git status" Tells you what's currently going on in the repo
+    "git push" Pushes our code from our local save to the remote repository
+    "git pull" You get the latest version of that repository from other people's changes
+    "git log" Show you a history of all commits
+    "git reset" If you made changes and you don't like them you can go back
+        "git reset --hard <commit>" <commit> is the hash, the numbers and letters
+        "git reset --hard origin/master" "origin/master" means where the origin is, if I cloned it from GitHub, it's GitHub.
+    "git reflog" Shows you all commands used (audit log)

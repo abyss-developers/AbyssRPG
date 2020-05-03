@@ -1,0 +1,21 @@
+Git (Version Control)
+
+HTML5, CSS, SAS (?)
+
+Flask (Python Web Microframework)
+
+SQL (Structured Query Language)
+
+Django (Python Web Framework)
+
+APIs (Aplication Programming Interfaces)
+
+JavaScript (Lmao idfk)
+
+Front Ends (Graphics, Animations, Javascript)
+
+Testing, CI/CD (DevOps, Automation)
+
+Scalability (Scale your apps!)
+
+(Security)
