@@ -104,7 +104,23 @@ body {
     top: -3px;
 }
 #logo3 a:hover {
-    background-image: url("images/gmail icon (hover).png")
+    background-image: url("images/gmail icon (hover).png");
+}
+#logo4 a {
+    background-image: url("https://assets.thesilphroad.com/img/icons/discord.png");
+    background-size: 100%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-indent: -9999999px;
+    float: left;
+    margin: 10px;
+    margin-left: 0px;
+}
+#logo4 a:hover {
+    background-image: url("images/discord icon (hover).png");
 }
 .button {
     width: 100%;
@@ -112,6 +128,35 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+#jaqarx {
+    width: 30%;
+    float: left;
+    margin: 10px 50px 30px 50px;
+    border-radius: 200px;
+    border: solid #67ce96;
+    border-width: 10px;
+    box-shadow: #25365a 10px 10px 10px;
+}
+.collapse {
+    background-color: #25365a;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapse:hover {
+    background-color: #f5f2eb;
+}
+.stuff {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
 #dark-div1 {
     padding: 100px 30px;
