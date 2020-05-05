@@ -13,6 +13,7 @@ Version Control
 - Git Commandline Commands
     "git clone <url>" Takes a repository stored on somewhere else (e.g. Github) and will be downloaded on your own local PC
     "git add <filename>" Tells Git that the next time we make a commit, we want to include these
+        "git add *" This adds every file that you've changed
     "git commit -m "commit message"" Commits it to repo at the current moment (-m is a flag standing for "Message")
         "git commit -am "commit message"" Adds to staging area AND commits
     "git status" Tells you what's currently going on in the repo
