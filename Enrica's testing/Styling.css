@@ -133,6 +133,7 @@ a {
     width: 30%;
     float: left;
     margin: auto;
+    margin-top: 50px;
     border-radius: 200px;
     border: solid #67ce96;
     border-width: 10px;
