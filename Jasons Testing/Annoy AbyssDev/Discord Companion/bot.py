@@ -18,7 +18,7 @@ async def on_member_remove(member):
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('Pong! {}ms'.format(round(client.latency * 1000)))
+    await ctx.send('> `AbyssBOT:` Pong! {}ms'.format(round(client.latency * 1000)))
 
 @client.command(aliases=['8ball', 'eightball'])
 async def _8ball(ctx, *, question):  # The star means that you can take in like sentences with spaces
@@ -37,6 +37,18 @@ async def _8ball(ctx, *, question):  # The star means that you can take in like 
         'As certian as Jason uploading to the #coding channel.',
         'As certian as anyone uploading to the #the-actual-roleplay channel.']
     await ctx.send("> Question : {}\n> Answer: {}".format(question, random.choice(responses)))
+
+@client.command()
+async def kay(ctx, *, status):
+    if status == "what are you up to":
+        kayResponses = [
+            "school again i hate school",
+            "bruh stfu im playing mc",
+            "im trying to draw but i gave up"
+        ]
+        await ctx.me.edit(nick="buyonegetonefree")
+        await ctx.send("{}".format(random.choice(kayResponses)))
+        await ctx.me.edit(nick="")
 
 @client.command(aliases = ['purge'])
 async def prune(ctx, amount=0):
@@ -69,5 +81,15 @@ async def unban(ctx, *, member):
             return
     await ctx.send("> `AbyssBOT:` Cannot find banned user. (Usage: !unban <username#tag>) (Or once again, just ask Jason.)")
 
+@client.command()
+async def control(ctx):
+    print("Control session started.")
+    while True:
+        x = input("BOT: ")
+        if x == "quit":
+            print("Control session stopped.")
+            return
+        await ctx.send(x)
 
-client.run('NzA4MDEzMzI2MjE4ODIxNjY2.XrRLIg.IqVUDhk9hrK8-KXAoIvw61DMVY4')
+
+client.run('NzA4MDEzMzI2MjE4ODIxNjY2.XrRo1g.qZSjGz8LCpYm5Eu6Ta5R7i2OyUM')
