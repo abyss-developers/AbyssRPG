@@ -25,11 +25,13 @@ def remove_emp(emp):
                   {'first': emp.first, 'last': emp.last})
 
 def ifexisting(emp):
-    c.execute("""SELECT last FROM employees""")
-    print(emp.last)
-    print(c.fetchall)
-    for i in c.fetchall():
-        if i == emp.last:
+    c.execute("""SELECT first FROM employees""")
+    results = c.fetchall()
+    for i in results:
+        print(results)
+        print(i)
+        print(emp.first)
+        if i == emp.first:
             print("yes")
         else:
             print("fail")
@@ -39,9 +41,9 @@ def ifexisting(emp):
 
 conn.commit()
 
-x = input("user")
-y = input("pass")
-z = input("pay")
+x = input("user: ")
+y = input("pass: ")
+z = input("pay: ")
 
 emp = Employee(x, y, z)
 #c.execute("INSERT INTO employees(first, last, pay) VALUES (:first, :last, :pay)", {'first': "jason", 'last': "zhou", 'pay': "10000000"})
