@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import sys
 
 class admin(commands.Cog):
     def __init__(self, client):
@@ -45,6 +46,45 @@ class admin(commands.Cog):
                 print("Control session stopped.")
                 return
             await ctx.send(x)
+
+    @commands.command()
+    async def shutdown(self, ctx, *, query=""):
+        if query == "cancel":
+            return
+        if query == "confirm":
+            embed = discord.Embed(
+                title = "Admin Information",
+                description = "Please type in your password.",
+                colour = discord.Colour.blue()
+            )
+
+            embed.set_footer(text='Coded and designed by Jason!')
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_author(name="Coded in Python by Jason")
+
+            embed.add_field(name="!shutdown cancel", value="Declines the shutdown request", inline=True)
+            embed.add_field(name="!shutdown <password>", value="Shutdowns the bot", inline=True)
+
+            await ctx.send(embed=embed)
+        if query == "password":
+            raise SystemExit
+        if query == "cancel":
+            return
+        if query == "":
+            embed = discord.Embed(
+                title = "Shutdown",
+                description = "Are you sure you would to shut down?",
+                colour = discord.Colour.blue()
+            )
+
+            embed.set_footer(text='Coded and designed by Jason!')
+            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_author(name="Coded in Python by Jason")
+
+            embed.add_field(name="!shutdown cancel", value="Declines the shutdown request", inline=True)
+            embed.add_field(name="!shutdown confirm", value="Shutdowns the bot", inline=True)
+
+            await ctx.send(embed=embed)
 
 def setup(client):
     client.add_cog(admin(client))
