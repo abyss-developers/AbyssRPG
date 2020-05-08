@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import asyncio
 
 class talk(commands.Cog):
     def __init__(self, client):
@@ -107,6 +108,32 @@ class talk(commands.Cog):
             await ctx.me.edit(nick="")
         if status == "":
             await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
+    
+    @commands.command()
+    async def therapy(self, ctx):
+        embed = discord.Embed(
+            title = "Therapy Session Initiliazed",
+            description = "You will now get therapy messages every hour!",
+            colour = discord.Colour.blue()
+        )
+
+        embed.set_footer(text='Coded and designed by Jason!')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_author(name="Coded in Python by Jason")
+
+        embed.add_field(name="!therapy stop", value="Stops the sessions", inline=True)
+        await ctx.send(embed=embed)
+
+        therapyList = (
+            '> `AbyssBOT Therapy:` We always have your back, seriously we are right behind you ready to beat up whatever is making you feel sad, even if it\'s you',
+            '> `AbyssBOT Therapy:` Your opinions are valid and everyone acknowledges it',
+            '> `AbyssBOT Therapy:` Do not overwork yourself, you deserve breaks and a good time',
+            '> `AbyssBOT Therapy:` You are a good friend and we appreciate you',
+            '> `AbyssBOT Therapy:` The server gets your pain and understands you, we wish you luck and you are cool'
+            )
+        for i in therapyList:
+            await ctx.send(therapyList)
+            await asyncio.sleep(3600)
 
 
 def setup(client):

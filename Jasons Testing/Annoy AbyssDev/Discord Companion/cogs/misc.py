@@ -42,11 +42,10 @@ class misc(commands.Cog):
 
     @commands.command()
     async def annoy(self, ctx):
-        script = "According to all laws of aviation"
-        for i in range(30):
-            for x in script.split():
-                await ctx.send(x)
-                await asyncio.sleep(0.75)
+        script = ("Fill 'em with the venom and eliminate 'em Other words, I Minute Maid 'em I don't wanna hurt 'em, but I did, I'm in a fit of rage I'm murderin' again, nobody will evade I'm fittin' to kill 'em and dumpin' their fuckin' bodies in the lake Obliterating everything, incinerate a renegade I'm here to make anybody who want it with the pen afraid But don't nobody want it, but they're gonna get it anyway 'Cause I'm beginnin' to feel like I'm mentally ill I'm Attila, kill or be killed, I'm a killer bee, the vanilla gorilla You're bringin' the killer within me outta me You don't wanna be the enemy of the demon who entered me Or be on the receivin' end of me, what stupidity it'd be Every bit of me's the epitome of a spitter When I'm in the vicinity, motherfucker, you better duck Or you finna be dead the minute you run into me A hundred percent of you is a fifth of a percent of me I'm 'bout to fuckin' finish you, bitch, I'm unfadable You wanna battle, I'm available, I'm blown up like an inflatable I'm undebatable, I'm unavoidable, I'm unevadable I'm on the toilet bowl, I got a trailer full of money and I'm paid in full I'm not afraid to pull a—")
+        for x in script.split():
+            await ctx.send(x)
+            await asyncio.sleep(0.50)
 
     @commands.command()
     async def annoying(self, ctx):
