@@ -1,5 +1,5 @@
 import pyautogui
-script = "e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e"
+script = "hanging off my earlobe is a rock"
 
 for x in script.split():
     pyautogui.press("enter", interval=1 )
