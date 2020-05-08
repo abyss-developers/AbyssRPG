@@ -7,7 +7,7 @@ class talk(commands.Cog):
         self.client = client
     
     @commands.command()
-    async def kay(self, ctx, *, status):
+    async def kay(self, ctx, *, status=""):
         if status == "what are you up to":
             kayResponses = [
                 "school again i hate school",
@@ -38,9 +38,11 @@ class talk(commands.Cog):
             await ctx.me.edit(nick="buyonegetonefree")
             await ctx.send("{}".format(random.choice(kayResponses)))
             await ctx.me.edit(nick="")
+        if status == "":
+            await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
 
     @commands.command()
-    async def jason(self, ctx, *, status):
+    async def jason(self, ctx, *, status=""):
         if status == "what are you up to":
             jasonResponses = [
                 "Coding atm",
@@ -71,9 +73,11 @@ class talk(commands.Cog):
             await ctx.me.edit(nick="jatgm")
             await ctx.send("{}".format(random.choice(jasonResponses)))
             await ctx.me.edit(nick="")
+        if status == "":
+            await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
 
     @commands.command()
-    async def nate(self, ctx, *, status):
+    async def nate(self, ctx, *, status=""):
         if status == "what are you up to":
             nateResponses = [
                 "bumberger",
@@ -101,6 +105,8 @@ class talk(commands.Cog):
             await ctx.me.edit(nick="kandydead")
             await ctx.send("{}".format(random.choice(nateResponses)))
             await ctx.me.edit(nick="")
+        if status == "":
+            await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
 
 
 def setup(client):
