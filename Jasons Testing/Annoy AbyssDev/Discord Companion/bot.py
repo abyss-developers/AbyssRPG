@@ -7,18 +7,19 @@ import os
 client = commands.Bot(command_prefix = '!')
 client.remove_command('help')
 
-status = cycle([
+statuses = cycle([
     '!kay | Be Nice!',
     '!8ball | Jason was here >:D',
     '!ping | Fork this on GitHub!',
     '!prune | Treat yourself!',
     '!purge | I love you! <3',
-    "!help | Thank Jason! <3"
+    "!help | Thank Jason! <3",
+    "!annoying | Drink water!",
     'Made with Love by Jason (and feedback from Kay)'])
 
 @tasks.loop(seconds=5)
 async def change_status():
-    await client.change_presence(activity=discord.Game(next(status)))
+    await client.change_presence(status=discord.Status.dnd, activity=discord.Game(next(statuses)))
 
 @client.event
 async def on_ready():
@@ -46,6 +47,7 @@ async def help(ctx):
 
     embed.set_footer(text='Coded and designed by Jason!')
     embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+    embed.set_author(name="Coded in Python by Jason")
 
     embed.add_field(name="!kay", value="Talk to Kay virtually!", inline=True)
     embed.add_field(name="!jason", value="Talk to Jason virtually!", inline=True)
@@ -53,7 +55,7 @@ async def help(ctx):
     embed.add_field(name="!8ball", value="Play 8ball!", inline=True)
     embed.add_field(name="!ping", value="Shows bot latency (ping)", inline=True)
     embed.add_field(name="!prune", value="Prunes for you (and works!)", inline=True)
-
+    embed.add_field(name="!annoying", value="Insecure? You're in luck!", inline=True)
 
     await ctx.send(embed=embed)
 
@@ -74,4 +76,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension("cogs.{}".format(filename[:-3])) # cuts example.py to example
 
-client.run('haha, cant show on github!')
+client.run('lol cant show this on github, ask jason for link')

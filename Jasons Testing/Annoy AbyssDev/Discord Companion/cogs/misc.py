@@ -48,6 +48,10 @@ class misc(commands.Cog):
                 await ctx.send(x)
                 await asyncio.sleep(0.75)
 
+    @commands.command()
+    async def annoying(self, ctx):
+        await ctx.send("> `AbyssBOT:` You, {}, are {}\% annoying.".format(ctx.message.author, round(random.uniform(0,100))))
+
 def setup(client):
     client.add_cog(misc(client))
 
