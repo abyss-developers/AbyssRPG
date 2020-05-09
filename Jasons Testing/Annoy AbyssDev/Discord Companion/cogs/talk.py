@@ -42,7 +42,7 @@ class talk(commands.Cog):
         if status == "":
             await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
 
-    commands.command()
+    @commands.command()
     async def enrica(self, ctx, *, status=""):
         if status == "what are you up to":
             enricaResponses = [ 
