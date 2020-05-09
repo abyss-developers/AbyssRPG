@@ -51,6 +51,40 @@ class misc(commands.Cog):
     async def annoying(self, ctx):
         await ctx.send("> `AbyssBOT:` You, {}, are {}\% annoying.".format(ctx.message.author, round(random.uniform(0,100))))
 
+    @commands.command()
+    async def schedule(self, ctx):
+        x = input("Date: ")
+        x1 = input("Item: ")
+        x1a = input("Description: ")
+        x2 = input("Item: ")
+        x2a = input("Description: ")
+        x3 = input("Item: ")
+        x3a = input("Description: ")
+        x4 = input("Item: ")
+        x4a = input("Description: ")
+        x5 = input("Item: ")
+        x5a = input("Description: ")
+
+        embed = discord.Embed(
+            title = x,
+            description = "Schedule for {}".format(x),
+            colour = discord.Colour.blue()
+        )
+
+        embed.set_footer(text='Coded and designed by Jason!')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_author(name="Coded in Python by Jason")
+
+        embed.add_field(name="{}".format(x1a), value="{}".format(x1), inline=True)
+        embed.add_field(name="{}".format(x2a), value="{}".format(x2), inline=True)
+        embed.add_field(name="{}".format(x3a), value="{}".format(x3), inline=True)
+        embed.add_field(name="{}".format(x4a), value="{}".format(x4), inline=True)
+        embed.add_field(name="{}".format(x5a), value="{}".format(x5), inline=True)
+
+        await ctx.channel.purge(limit=1)
+        await ctx.send(embed=embed)
+
+
 def setup(client):
     client.add_cog(misc(client))
 
