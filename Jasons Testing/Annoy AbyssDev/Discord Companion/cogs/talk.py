@@ -42,6 +42,39 @@ class talk(commands.Cog):
         if status == "":
             await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
 
+    commands.command()
+    async def enrica(self, ctx, *, status=""):
+        if status == "what are you up to":
+            enricaResponses = [ 
+                "hello",
+                "hi",
+                "heyo",
+            ]
+            await ctx.me.edit(nick="Spacceghost")
+            await ctx.send("{}".format(random.choice(enricaResponses)))
+            await ctx.me.edit(nick="")
+        if status == "hi":
+            enricaResponses = [ 
+                "being tired",
+                "big dummie head because I didn't do homework",
+                "trying to draw but failing",
+            ]
+            await ctx.me.edit(nick="Spacceghost")
+            await ctx.send("{}".format(random.choice(enricaResponses)))
+            await ctx.me.edit(nick="")
+        if status == "how are you":
+            enricaResponses = [
+                "I'm good, you?",
+                "Tired, very depresso ._.",
+                "Idk, mixed feelings dude",
+            ]
+            await ctx.me.edit(nick="Spacceghost")
+            await ctx.send("{}".format(random.choice(enricaResponses)))
+            await ctx.me.edit(nick="")
+        if status == "":
+            await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
+
+
     @commands.command()
     async def jason(self, ctx, *, status=""):
         if status == "what are you up to":
