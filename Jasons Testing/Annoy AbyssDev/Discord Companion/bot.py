@@ -6,6 +6,7 @@ import os
 
 client = commands.Bot(command_prefix = '!')
 client.remove_command('help')
+client.remove_command('quit')
 
 statuses = cycle([
     '!kay | Be Nice!',
@@ -76,3 +77,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension("cogs.{}".format(filename[:-3])) # cuts example.py to example
 
+client.run('NzA4MDEzMzI2MjE4ODIxNjY2.XrR-HQ._yAig25Ekhlk6IU6e5bixDi-M_E')
