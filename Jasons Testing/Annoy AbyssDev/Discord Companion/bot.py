@@ -6,6 +6,7 @@ import os
 
 client = commands.Bot(command_prefix = '!')
 client.remove_command('help')
+client.remove_command('quit')
 
 statuses = cycle([
     '!kay | Be Nice!',
