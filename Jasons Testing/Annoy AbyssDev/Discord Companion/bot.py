@@ -34,7 +34,7 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         print("{}: Invalid command used (or mistaken)".format(ctx.message.author))
 
-@client.command(aliases=['bot-commands','commands'])
+@client.command(aliases=['bot-commands', 'commands'])
 async def _botcommands(ctx):
     embed = discord.Embed(
         title = "Help",
