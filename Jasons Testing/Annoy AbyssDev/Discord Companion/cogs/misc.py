@@ -49,7 +49,7 @@ class misc(commands.Cog):
 
     @commands.command()
     async def annoying(self, ctx):
-        await ctx.send("> `AbyssBOT:` You, {}, are {}\% annoying.".format(ctx.message.author, round(random.uniform(0,100))))
+        await ctx.send("> `AbyssBOT:` You, {}, are {}% annoying.".format(ctx.message.author, round(random.uniform(0,100))))
 
     @commands.command()
     async def schedule(self, ctx):

@@ -1,11 +1,9 @@
 import discord
 from discord.ext import commands, tasks
 from itertools import cycle
-import random
 import os
 
 client = commands.Bot(command_prefix = '!')
-client.remove_command('help')
 client.remove_command('quit')
 
 statuses = cycle([
@@ -36,10 +34,8 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         print("{}: Invalid command used (or mistaken)".format(ctx.message.author))
 
-@client.command()
-async def help(ctx):
-    author = ctx.message.author
-
+@client.command(aliases=['bot-commands','commands'])
+async def _botcommands(ctx):
     embed = discord.Embed(
         title = "Help",
         description = "These are the commands in the AbyssBOT bot! Make sure to ask Jason for any additional help.",
@@ -61,15 +57,15 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 @client.command()
-async def load(ctx, extention):
+async def load(extention):
     client.load_extension("cogs.{}".format(extention))
 
 @client.command()
-async def unload(ctx, extention):
+async def unload(extention):
     client.unload_extension("cogs.{}".format(extention))
 
 @client.command()
-async def reload(ctx, extention):
+async def reload(extention):
     client.unload_extension("cogs.{}".format(extention))
     client.load_extension("cogs.{}".format(extention))
 
