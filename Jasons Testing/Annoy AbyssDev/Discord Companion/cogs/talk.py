@@ -44,7 +44,7 @@ class talk(commands.Cog):
 
     @commands.command()
     async def enrica(self, ctx, *, status=""):
-        if status == "what are you up to":
+        if status == "hi":
             enricaResponses = [ 
                 "hello",
                 "hi",
@@ -53,7 +53,7 @@ class talk(commands.Cog):
             await ctx.me.edit(nick="Spacceghost")
             await ctx.send("{}".format(random.choice(enricaResponses)))
             await ctx.me.edit(nick="")
-        if status == "hi":
+        if status == "what are you up to":
             enricaResponses = [ 
                 "being tired",
                 "big dummie head because I didn't do homework",
@@ -143,20 +143,18 @@ class talk(commands.Cog):
             await ctx.send("> `AbyssBOT:` Please put one of the three sentences. For more info, ask Jason.")
     
     @commands.command()
-    async def therapy(self, ctx, stop=""):
-        if stop == "":
-            embed = discord.Embed(
-                title = "Therapy Session Initiliazed",
-                description = "You will now get therapy messages every hour!",
-                colour = discord.Colour.blue()
-            )
+    async def therapy(self, ctx):
+        embed = discord.Embed(
+            title = "Therapy Session Initiliazed",
+            description = "You will now get therapy messages every hour!",
+            colour = discord.Colour.blue()
+        )
 
-            embed.set_footer(text='Coded and designed by Jason!')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
-            embed.set_author(name="Coded in Python by Jason")
+        embed.set_footer(text='Coded and designed by Jason!')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_author(name="Coded in Python by Jason")
 
-            embed.add_field(name="!therapy stop", value="Stops the sessions", inline=True)
-            await ctx.send(embed=embed)
+        await ctx.send(embed=embed)
 
         therapyList = [
             '> `AbyssBOT Therapy:` We always have your back, seriously we are right behind you ready to beat up whatever is making you feel sad, even if it\'s you',
@@ -166,18 +164,6 @@ class talk(commands.Cog):
             '> `AbyssBOT Therapy:` The server gets your pain and understands you, we wish you luck and you are cool']
 
         while True:
-            if stop == "stop":
-                embed = discord.Embed(
-                    title = "Therapy Session Stopped",
-                    description = "You will no longer get therapy messages :(",
-                    colour = discord.Colour.blue()
-                )
-
-                embed.set_footer(text='Coded and designed by Jason!')
-                embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
-                embed.set_author(name="Coded in Python by Jason")
-                await ctx.send(embed=embed)
-                break
             await asyncio.sleep(3600)
             await ctx.send(random.choice(therapyList))
 
