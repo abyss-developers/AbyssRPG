@@ -27,8 +27,8 @@ class embeds(commands.Cog):
             colour = discord.Colour.blue()
         )
 
-        embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed2.set_footer(text='Love from the AbyssDEV Team')
+        embed2.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
 
         await ctx.send(embed=embed)
         await ctx.send(embed=embed2)
