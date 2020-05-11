@@ -57,15 +57,15 @@ async def _botcommands(ctx):
     await ctx.send(embed=embed)
 
 @client.command()
-async def load(extention):
+async def load(ctx, extention):
     client.load_extension("cogs.{}".format(extention))
 
 @client.command()
-async def unload(extention):
+async def unload(ctx, extention):
     client.unload_extension("cogs.{}".format(extention))
 
 @client.command()
-async def reload(extention):
+async def reload(ctx, extention):
     client.unload_extension("cogs.{}".format(extention))
     client.load_extension("cogs.{}".format(extention))
 
