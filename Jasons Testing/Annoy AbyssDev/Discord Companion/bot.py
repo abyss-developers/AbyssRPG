@@ -3,7 +3,7 @@ from discord.ext import commands, tasks
 from itertools import cycle
 import os
 
-client = commands.Bot(command_prefix = '!')
+client = commands.Bot(command_prefix = '!', case_insensitive=True)
 client.remove_command('quit')
 
 statuses = cycle([

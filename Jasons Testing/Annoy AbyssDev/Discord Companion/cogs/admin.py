@@ -5,11 +5,8 @@ class admin(commands.Cog):
     def __init__(self, client):
         self.client = client
     
-    def check(self, ctx):
-        return ctx.author.id == 161686163780927489 or 410990480818569218
-
-    @commands.command(aliases = ['purge'])
-    @commands.check(check)
+    @commands.command(aliases=['purge'])
+    @commands.has_role('Moderator')
     async def prune(self, ctx, amount=0):
         if amount <= 0:
             await ctx.send("> `AbyssBOT:` Missing Arguments: Amount (Usage: !prune/!purge <amount>) (or just ask jason lmao)")
@@ -17,20 +14,21 @@ class admin(commands.Cog):
             await ctx.channel.purge(limit=amount + 1)
     
     @commands.command()
-    @commands.check(check)
+    @commands.has_role('Moderator')
     async def kick(self, ctx, member : discord.Member, *, reason=None): # reads that object as a Member object from import discord
         await member.kick(reason=reason)
         print("{} was kicked for reason: {}".format(member, reason))
         await ctx.send("> `AbyssBOT:` {} was kicked for reason: {}".format(member, reason))
 
     @commands.command()
+    @commands.has_role('Admin')
     async def ban(self, ctx, member : discord.Member, *, reason=None): # reads that object as a Member object from import discord
         await member.ban(reason=reason)
         print("{} was banned for reason: {}".format(member, reason))
         await ctx.send("> `AbyssBOT:` {} was banned for reason: {}".format(member.mention, reason))
 
     @commands.command()
-    @commands.check(check)
+    @commands.has_role('Moderator')
     async def unban(self, ctx, *, member):
         banned_users = await ctx.guild.bans()
         member_name, member_discriminator = member.split('#')
@@ -53,6 +51,7 @@ class admin(commands.Cog):
             await ctx.send(x)
 
     @commands.command()
+    @commands.has_role('Moderator')
     async def shutdown(self, ctx, *, query=""):
         if query == "cancel":
             return
@@ -71,7 +70,7 @@ class admin(commands.Cog):
             embed.add_field(name="!shutdown <password>", value="Shutdowns the bot", inline=True)
 
             await ctx.send(embed=embed)
-        if query == "password":
+        if query == "interiorcrocodilealligator":
             raise SystemExit
         if query == "cancel":
             return
