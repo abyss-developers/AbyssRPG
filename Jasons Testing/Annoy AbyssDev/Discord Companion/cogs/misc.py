@@ -25,44 +25,32 @@ class misc(commands.Cog):
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
             if payload.emoji.name == '🔴':
                 role = discord.utils.get(guild.roles, name='Red')
-                await member.add_roles(role)
             if payload.emoji.name == '🩸':
                 role = discord.utils.get(guild.roles, name='Scarlet')
-                await member.add_roles(role)
             if payload.emoji.name == '🟠':
                 role = discord.utils.get(guild.roles, name='Orange')
-                await member.add_roles(role)
             if payload.emoji.name == '🟡':
                 role = discord.utils.get(guild.roles, name='Yellow')
-                await member.add_roles(role)
             if payload.emoji.name == '💴':
                 role = discord.utils.get(guild.roles, name='Light yellow')
-                await member.add_roles(role)
             if payload.emoji.name == '🥬':
                 role = discord.utils.get(guild.roles, name='Electric green')
-                await member.add_roles(role)
             if payload.emoji.name == '🟢':
                 role = discord.utils.get(guild.roles, name='Green')
-                await member.add_roles(role)
             if payload.emoji.name == '👥':
                 role = discord.utils.get(guild.roles, name='Teal')
-                await member.add_roles(role)
             if payload.emoji.name == '🟦':
                 role = discord.utils.get(guild.roles, name='Light blue')
-                await member.add_roles(role)
-            if payload.emoji.name == '️🍶':
+            if payload.emoji.name == '🍶':
                 role = discord.utils.get(guild.roles, name='Blue')
-                await member.add_roles(role)
-                print("lol")
             if payload.emoji.name == '🟣':
                 role = discord.utils.get(guild.roles, name='Light purple')
-                await member.add_roles(role)
             if payload.emoji.name == '🍇':
                 role = discord.utils.get(guild.roles, name='Purple')
-                await member.add_roles(role)
             if payload.emoji.name == '🐖':
                 role = discord.utils.get(guild.roles, name='Pink')
-                await member.add_roles(role)
+            await member.add_roles(role)
+
                 
                 
               
