@@ -53,6 +53,7 @@ async def _botcommands(ctx):
     embed.add_field(name="!ping", value="Shows bot latency (ping)", inline=True)
     embed.add_field(name="!prune", value="Prunes for you (and works!)", inline=True)
     embed.add_field(name="!annoying", value="Insecure? You're in luck!", inline=True)
+    embed.add_field(name="!rules <integer>", value="Stay informed on the rules!", inline=True)
 
     await ctx.send(embed=embed)
 
