@@ -74,3 +74,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension("cogs.{}".format(filename[:-3])) # cuts example.py to example
 
+client.run('NzA4MDEzMzI2MjE4ODIxNjY2.XrZA2g.fFSOiXvT1vtbAVHM3opnX2mjDL8')

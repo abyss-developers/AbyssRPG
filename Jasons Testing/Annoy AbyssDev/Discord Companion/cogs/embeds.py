@@ -6,6 +6,47 @@ class embeds(commands.Cog):
         self.client = client
     
     @commands.command()
+    @commands.has_role('Admin')
+    async def colorassigner(self, ctx):
+        embed = discord.Embed(
+            title = "Color Roles",
+            description = "Choose the colors you would like!",
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+
+        embed.add_field(name=":red_circle: Red", value="Use this emoji for red.")
+        embed.add_field(name=":drop_of_blood: Scarlet", value="Use this emoji for scarlet.")
+        embed.add_field(name=":orange_circle: Orange", value="Use this emoji for orange.")
+        embed.add_field(name=":yellow_circle: Yellow", value="Use this emoji for yellow.")
+        embed.add_field(name=":yen: Light yellow", value="Use this emoji for light yellow.")
+        embed.add_field(name=":leafy_green: Electric green", value="Use this emoji for electric green.")
+        embed.add_field(name=":green_circle: Green", value="Use this emoji for green.")
+        embed.add_field(name=":busts_in_silhouette: Teal", value="Use this emoji for teal.")
+        embed.add_field(name=":blue_square: Light blue", value="Use this emoji for light blue.")
+        embed.add_field(name=":sake: Blue", value="Use this emoji for blue.")
+        embed.add_field(name=":purple_circle: Light purple", value="Use this emoji for light purple.")
+        embed.add_field(name=":grapes: Purple", value="Use this emoji for purple.")
+        embed.add_field(name=":pig2: Pink", value="Use this emoji for pink.")
+
+        await ctx.channel.purge(limit=1)
+        msg = await ctx.send(embed=embed)
+        await msg.add_reaction('🔴')
+        await msg.add_reaction('🩸')
+        await msg.add_reaction('🟠')
+        await msg.add_reaction('🟡')
+        await msg.add_reaction('💴')
+        await msg.add_reaction('🥬')
+        await msg.add_reaction('🟢')
+        await msg.add_reaction('👥')
+        await msg.add_reaction('🟦')
+        await msg.add_reaction('🍶')
+        await msg.add_reaction('🟣')
+        await msg.add_reaction('🍇')
+        await msg.add_reaction('🐖')
+
+    @commands.command()
     async def rules(self, ctx, parameter=0):
         if parameter == 1:
             embed = discord.Embed(
