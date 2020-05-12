@@ -47,6 +47,27 @@ class embeds(commands.Cog):
         await msg.add_reaction('🐖')
 
     @commands.command()
+    @commands.has_role('Admin')
+    async def rolepicker(self, ctx):
+        embed = discord.Embed(
+            title = "Hobby Picker",
+            description = "Choose the hobbies you would like!",
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+
+        embed.add_field(name=":desktop: Programmer", value="Use this emoji for red.")
+        embed.add_field(name=":pencil: Writer", value="Use this emoji for scarlet.")
+        embed.add_field(name=":art: Artist", value="Use this emoji for orange.")
+
+        await ctx.channel.purge(limit=1)
+        msg = await ctx.send(embed=embed)
+        await msg.add_reaction('🖥️')
+        await msg.add_reaction('📝')
+        await msg.add_reaction('🎨')
+
+    @commands.command()
     async def rules(self, ctx, parameter=0):
         if parameter == 1:
             embed = discord.Embed(
@@ -121,7 +142,7 @@ class embeds(commands.Cog):
             
             embed2 = discord.Embed(
                 title = "Additional Info",
-                description = "Thank you for checking out our server! For any additional info, please do not hesitate to @ one of our admins/mods. We want this place to feel as safe as possible!",
+                description = "Thank you for checking out our server! For any additional info, please do not hesitate to @ one of our admins/mods. We want this place to feel as safe as possible! \n\n To obtain access to the rest of the server, please click the **Red Circle**. This is to trick people who just breeze through the rules without reading them!",
                 colour = discord.Colour.blue()
             )
 
@@ -130,7 +151,9 @@ class embeds(commands.Cog):
 
             await ctx.channel.purge(limit=1)
             await ctx.send(embed=embed)
-            await ctx.send(embed=embed2)
+            msg = await ctx.send(embed=embed2)
+            await msg.add_reaction('🟢')
+            await msg.add_reaction('🔴')
 
 
 def setup(client):
