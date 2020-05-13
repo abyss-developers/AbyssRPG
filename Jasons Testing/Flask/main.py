@@ -1,19 +1,20 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello! This is the main page lmao <h4>Poopy Poop!</h4>"
+    return render_template("index.html")
 
-@app.route("/<name>")
+@app.route("/<name>/")
 def user(name):
     return f"Hello {name}"
 
-@app.route("/admin")
+@app.route("/admin/")
 def admin():
-    return redirect(url_for("home"))
-    # Home is the func name it's redirecting to
+    return redirect(url_for("user", name="Admin!"))
+    # User is the func name it's redirecting to
+    # name="admin" is it passing the parameter
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
