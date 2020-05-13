@@ -67,7 +67,7 @@ class misc(commands.Cog):
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
             if payload.emoji.name == '🔴':
                 role = discord.utils.get(guild.roles, name='Observer')
-            await member.add_roles(role)
+                await member.add_roles(role)
     @commands.Cog.listener()
     async def on_raw_reaction_remove(self, payload):
         message_id = payload.message_id
