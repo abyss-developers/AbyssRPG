@@ -6,6 +6,6 @@ install:
   - pip install discord.py
 script:
   - cd '.\Jasons Testing\'
-  - cd '.\Annoy AbyssDev\'
-  - cd '.\Discord Companion\'
-  - python bot.py
+  - cd '.\Web Development\'
+  - cd '.\Flask\'
+  - python main.py
