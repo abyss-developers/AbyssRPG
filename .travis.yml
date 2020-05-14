@@ -10,3 +10,4 @@ script:
   - cd 'Web Development'
   - cd 'Flask'
   - python main.py
+  - quit()
