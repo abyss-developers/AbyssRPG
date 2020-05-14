@@ -5,12 +5,17 @@
 This Repository (AbyssRPG) is ran by the developers of some unreleased projects. This is our main hub for our ideas, we have some random projects in here, some websites, just a drawing board for our ideas. Why is it called AbyssRPG? AbyssRPG is a concept name for a upcoming RPG name.
 ## Projects
 AbyssBOT Discord Bot (made by jatgm)
+
 * Moderation bot that has some misc commands (fun)
 * Designed specially for the [AbyssDEV](https://discord.gg/rGCmshX) website
+
 Flask Framework Web
+
 * Work in progress
+
 Tiled Base RPG Game
 * Coded in Python with the Pygame module
 * Top down scrolling game
+
 ## LICENSE
 Recently licensed under the [MIT](LICENSE.md) license! :D
