@@ -9,5 +9,4 @@ script:
   - cd 'Jasons Testing'
   - cd 'Web Development'
   - cd 'Flask'
-  - python main.py
-  - quit()
+  - python main.py test
