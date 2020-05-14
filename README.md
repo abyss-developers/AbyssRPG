@@ -1,9 +1,10 @@
-<h1>AbyssRPG</h1>
-<p>Secret! haha. This is just a project between me and Enrica... not sure what to make in it, but oh well we'll see! :D <br>
-Stay tuned! </p>
+# AbyssRPG Repository
+## This repository
+This repository (AbyssRPG) is run by the admins
 <hr>
 <h2>Gameplay</h2>
 <p>Code - Elephant will be a 2D adventure explorer game where a charachter will explore the town of Exii. Battling it out everywhere, can they save us from the totally unthoughout enemy? Find out in this game that will never probably be released soon!</p>
+[![](https://discordapp.com/api/guilds/625896507438137346/embed.png?style=banner1)](https://discord.gg/discord-api)
 <hr>
 
 ## Features
