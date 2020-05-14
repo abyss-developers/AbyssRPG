@@ -7,7 +7,7 @@ This Repository (AbyssRPG) is ran by the developers of some unreleased projects.
 AbyssBOT Discord Bot (made by jatgm)
 
 * Moderation bot that has some misc commands (fun)
-* Designed specially for the [AbyssDEV](https://discord.gg/rGCmshX) website
+* Designed specially for the [AbyssDEV](https://discord.gg/rGCmshX) server
 
 Flask Framework Web
 
