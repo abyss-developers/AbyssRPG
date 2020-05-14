@@ -5,4 +5,7 @@ cache: pip
 install:
   - pip install discord.py
 script:
-  - python Jasons Testing\Annoy AbyssDev\Discord Companion\bot.py
+  - cd '.\Jasons Testing\'
+  - cd '.\Annoy AbyssDev\'
+  - cd '.\Discord Companion\'
+  - python bot.py
