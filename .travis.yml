@@ -7,5 +7,6 @@ install:
 script:
   - ls
   - cd 'Jasons Testing'
-  - ls
+  - cd 'Web Development'
+  - cd 'Flask'
   - python main.py
