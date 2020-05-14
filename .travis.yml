@@ -3,9 +3,7 @@ python:
   - "3.8"
 cache: pip
 install:
-  - pip install discord.py
+  - pip install flask
 script:
-  - cd '.\Jasons Testing\'
-  - cd '.\Web Development\'
-  - cd '.\Flask\'
+  - ls
   - python main.py
