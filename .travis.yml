@@ -6,6 +6,6 @@ install:
   - pip install flask
 script:
   - ls
-  - cd '.\Jasons Testing\'
+  - cd 'Jasons Testing'
   - ls
   - python main.py
