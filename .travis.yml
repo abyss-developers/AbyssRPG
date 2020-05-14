@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.8"
+cache: pip
+install:
+  - pip install discord.py
+script:
+  - python Jasons Testing\Annoy AbyssDev\Discord Companion\bot.py
