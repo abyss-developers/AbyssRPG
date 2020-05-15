@@ -135,8 +135,29 @@ class misc(commands.Cog):
             'As certain as Jason uploading to the #art channel.',
             'As certain as Jason uploading to the #coding channel.',
             'As certain as anyone uploading to the #the-actual-roleplay channel.',
-            'No, but i love u too bb <33 0///0']
-        await ctx.send("> Question : {}\n> Answer: {}".format(question, random.choice(responses)))
+            'No, but i love u too bb <33 0///0',
+            'Hmm... I highly doubt it... more likely for Saga to play trumpet then that to happen.',
+            'Yes, it will happen, but dude, are your standards so low? That\'s sad even for MY standards.',
+            'Heck yes. Like the probability of this message to even be here is one in a fricking million (i tweaked the code)',
+            'As certian as anyone looking in the #updates channel lmao',
+            'As certian as being a millionare at working at McDonalds',
+            'As certian as the things that I am doing are legal',
+            'As certian as Riot Games servers being up',
+            'As certian as Discord servers being up',
+            'As certian as Apple charging good prices for their products',
+            'pretty darn certian.'
+        ]
+        embed = discord.Embed(
+            title = "Competitive 8ball",
+            description = "Shaking the ball... swish swish",
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+
+        embed.add_field(name=f"{question}", value=f"{random.choice(responses)}")
+        
+        await ctx.send(embed=embed)
 
     @commands.command()
     async def annoy(self, ctx):
