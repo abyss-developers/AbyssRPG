@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import asyncio
 
 class admin(commands.Cog):
     def __init__(self, client):
@@ -39,6 +40,35 @@ class admin(commands.Cog):
                 await ctx.send("> `AbyssBOT:` {} has been unbanned.".format(user.mention))
                 return
         await ctx.send("> `AbyssBOT:` Cannot find banned user. (Usage: !unban <username#tag>) (Or once again, just ask Jason.)")
+
+    @commands.command()
+    @commands.has_role('Moderator')
+    async def mute(self, ctx, member : discord.Member, *, time=None): # reads that object as a Member object from import discord
+        print("{} was muted for time: {}m".format(member, time))
+        role = discord.utils.get(member.guild.roles, name="Muted")
+        await member.add_roles(role)
+        embed = discord.Embed(
+            title = "Muted",
+            description = "{} was muted for {}m.".format(member.mention, time),
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        await ctx.send(embed=embed)
+        time = 60 * int(time)
+        await asyncio.sleep(time)
+        await member.add_roles(role)
+        embed = discord.Embed(
+            title = "Muted",
+            description = "{} was unmuted!".format(member.mention),
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        role = discord.utils.get(member.guild.roles, name="Muted")
+        await ctx.send(embed=embed)
+        await member.remove_roles(role)
+
 
     @commands.command()
     async def control(self, ctx):

@@ -11,6 +11,8 @@ class misc(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member):
         print("{} has joined the server.".format(member))
+        role = discord.utils.get(member.guild.roles, name="Newcomer")
+        await member.add_roles(role)
 
     @commands.Cog.listener()
     async def on_member_remove(self, member):
@@ -61,13 +63,13 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.add_roles(role)
-        if message_id == 709826742008676402:
+        if message_id == 713096567682236476:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
             if payload.emoji.name == '🔴':
-                role = discord.utils.get(guild.roles, name='Observer')
-                await member.add_roles(role)
+                role = discord.utils.get(guild.roles, name='Newcomer')
+                await member.remove_roles(role)
     @commands.Cog.listener()
     async def on_raw_reaction_remove(self, payload):
         message_id = payload.message_id
