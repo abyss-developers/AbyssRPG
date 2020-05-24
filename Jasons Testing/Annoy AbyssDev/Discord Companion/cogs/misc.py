@@ -163,9 +163,8 @@ class misc(commands.Cog):
 
     @commands.command()
     async def annoy(self, ctx):
-        script = ("lol")
-        for x in script.split():
-            await ctx.send(x)
+        for i in range(100):
+            await ctx.send("☭")
             await asyncio.sleep(0.50)
         
 
