@@ -146,7 +146,6 @@ class embeds(commands.Cog):
                 description = "Welcome to the AbyssDEV community server. These rules are meant to guide us, not to restrict us. If you have any questions, please contact a staff member. Anyways, lets get started!",
                 colour = discord.Colour.blue()
             )
-
             embed.set_footer(text='Love from the AbyssDEV Team')
             embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
 
@@ -170,6 +169,23 @@ class embeds(commands.Cog):
             msg = await ctx.send(embed=embed2)
             await msg.add_reaction('🟢')
             await msg.add_reaction('🔴')
+
+    @commands.command()
+    async def introduce(self, ctx):
+        embed = discord.Embed(
+            title = "Introduction",
+            description = "Hello! I am AbyssBOT, a bot coded by Jason as a multimedia moderation bot. Hopefully you won't need to see me (unless its for fun!) I will see you around sometime, and if I am offline, that means Jason is an idiot or he is asleep.",
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+
+        embed.add_field(name="Social Media(s)", value="I have none! Just @ me or @jatgm#2482.")
+        embed.add_field(name="Preferred name/nickname", value="AbyssBOT (with BOT all caps)")
+        embed.add_field(name="Pronouns", value="I have no preference")
+        embed.add_field(name="Any extra information: Something else you'd like for us to know about you?", value="I have one command that just completely shuts me down lmao")
+        
+        await ctx.send(embed=embed)
 
 
 def setup(client):
