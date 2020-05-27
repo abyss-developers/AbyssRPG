@@ -52,7 +52,7 @@ def graphics():
     screen.fill(dark_gray)
     draw_grid()
     player.blitPlayer()
-    for x in range(10,20):
+    for x in range(10, 20):
         Wall(x, 5)
 
 #--Game Variables--#

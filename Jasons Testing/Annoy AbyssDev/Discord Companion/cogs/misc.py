@@ -63,7 +63,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.add_roles(role)
-        if message_id == 713096567682236476:
+        if message_id == 715267049651306526:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
