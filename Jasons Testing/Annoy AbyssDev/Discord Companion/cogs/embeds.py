@@ -68,6 +68,27 @@ class embeds(commands.Cog):
         await msg.add_reaction('🎨')
 
     @commands.command()
+    @commands.has_role('Admin')
+    async def pronounpicker(self, ctx):
+        embed = discord.Embed(
+            title = "Pronoun Picker",
+            description = "Choose the pronoun(s) you would like!",
+            colour = discord.Colour.blue()
+        )
+        embed.set_footer(text='Love from the AbyssDEV Team')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+
+        embed.add_field(name=":white_circle: they/them/theirs", value="Use this emoji for they/them/theirs.")
+        embed.add_field(name=":blue_circle: he/him/his", value="Use this emoji for he/him/his.")
+        embed.add_field(name=":red_circle: she/her/hers", value="Use this emoji for she/her/hers.")
+
+        await ctx.channel.purge(limit=1)
+        msg = await ctx.send(embed=embed)
+        await msg.add_reaction('⚪')
+        await msg.add_reaction('🔵')
+        await msg.add_reaction('🔴')
+
+    @commands.command()
     async def rules(self, ctx, parameter=0):
         if parameter == 1:
             embed = discord.Embed(
