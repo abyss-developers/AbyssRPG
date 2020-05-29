@@ -184,13 +184,6 @@ class misc(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command()
-    async def annoy(self, ctx):
-        for i in range(100):
-            await ctx.send("☭")
-            await asyncio.sleep(0.50)
-        
-
-    @commands.command()
     async def annoying(self, ctx):
         await ctx.send("> `AbyssBOT:` You, {}, are {}% annoying.".format(ctx.message.author, round(random.uniform(0,100))))
 

@@ -69,6 +69,12 @@ class admin(commands.Cog):
         await ctx.send(embed=embed)
         await member.remove_roles(role)
 
+    @commands.command()
+    @commands.has_role('Admin')
+    async def annoy(self, ctx):
+        for i in range(100):
+            await ctx.send("☭")
+            await asyncio.sleep(0.50)
 
     @commands.command()
     async def control(self, ctx):
