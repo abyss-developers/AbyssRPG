@@ -5,7 +5,7 @@ import asyncio
 class admin(commands.Cog):
     def __init__(self, client):
         self.client = client
-    
+
     @commands.command(aliases=['purge'])
     @commands.has_role('Moderator')
     async def prune(self, ctx, amount=0):

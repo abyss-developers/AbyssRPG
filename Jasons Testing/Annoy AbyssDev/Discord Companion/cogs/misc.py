@@ -21,7 +21,7 @@ class misc(commands.Cog):
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
         message_id = payload.message_id
-        if message_id == 715425552227368982:
+        if message_id == 716082404569120860:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -52,7 +52,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🐖':
                 role = discord.utils.get(guild.roles, name='Pink')
             await member.add_roles(role)
-        if message_id == 715425610385588288:
+        if message_id == 716082462991712276:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -63,7 +63,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.add_roles(role)
-        if message_id == 715426366463410246:
+        if message_id == 716082501830967377:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -74,7 +74,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🔴':
                 role = discord.utils.get(guild.roles, name='she/her/hers')
             await member.add_roles(role)
-        if message_id == 715267049651306526:
+        if message_id == 716083388016099339:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -84,7 +84,7 @@ class misc(commands.Cog):
     @commands.Cog.listener()
     async def on_raw_reaction_remove(self, payload):
         message_id = payload.message_id
-        if message_id == 715425552227368982:
+        if message_id == 716082404569120860:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -115,7 +115,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🐖':
                 role = discord.utils.get(guild.roles, name='Pink')
             await member.remove_roles(role)
-        if message_id == 715425610385588288:
+        if message_id == 716082462991712276:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -126,7 +126,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.remove_roles(role)
-        if message_id == 715426366463410246:
+        if message_id == 716082501830967377:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
