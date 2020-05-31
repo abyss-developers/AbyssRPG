@@ -151,7 +151,7 @@ class talk(commands.Cog):
         )
 
         embed.set_footer(text='Coded and designed by Jason!')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
         embed.set_author(name="Coded in Python by Jason")
 
         await ctx.send(embed=embed)

@@ -21,7 +21,7 @@ class misc(commands.Cog):
     @commands.Cog.listener()
     async def on_raw_reaction_add(self, payload):
         message_id = payload.message_id
-        if message_id == 716082404569120860:
+        if message_id == 716717703003504650:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -52,7 +52,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🐖':
                 role = discord.utils.get(guild.roles, name='Pink')
             await member.add_roles(role)
-        if message_id == 716082462991712276:
+        if message_id == 716717742799061065:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -63,7 +63,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.add_roles(role)
-        if message_id == 716082501830967377:
+        if message_id == 716717773656555520:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -74,7 +74,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🔴':
                 role = discord.utils.get(guild.roles, name='she/her/hers')
             await member.add_roles(role)
-        if message_id == 716083388016099339:
+        if message_id == 716717899405983774:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -84,7 +84,7 @@ class misc(commands.Cog):
     @commands.Cog.listener()
     async def on_raw_reaction_remove(self, payload):
         message_id = payload.message_id
-        if message_id == 716082404569120860:
+        if message_id == 716717703003504650:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -115,7 +115,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🐖':
                 role = discord.utils.get(guild.roles, name='Pink')
             await member.remove_roles(role)
-        if message_id == 716082462991712276:
+        if message_id == 716717742799061065:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -126,7 +126,7 @@ class misc(commands.Cog):
             if payload.emoji.name == '🎨':
                 role = discord.utils.get(guild.roles, name='Artist')
             await member.remove_roles(role)
-        if message_id == 716082501830967377:
+        if message_id == 716717773656555520:
             guild_id = payload.guild_id
             guild = discord.utils.find(lambda g : g.id == guild_id, self.client.guilds)
             member = discord.utils.find(lambda m : m.id == payload.user_id, guild.members)
@@ -177,7 +177,7 @@ class misc(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
         embed.add_field(name=f"{question}", value=f"{random.choice(responses)}")
         
@@ -208,7 +208,7 @@ class misc(commands.Cog):
         )
 
         embed.set_footer(text='Coded and designed by Jason!')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
         embed.set_author(name="Coded in Python by Jason")
 
         embed.add_field(name="{}".format(x1a), value="{}".format(x1), inline=True)

@@ -53,7 +53,7 @@ class admin(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
         await ctx.send(embed=embed)
         time = 60 * int(time)
         await asyncio.sleep(time)
@@ -64,7 +64,7 @@ class admin(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
         role = discord.utils.get(member.guild.roles, name="Muted")
         await ctx.send(embed=embed)
         await member.remove_roles(role)
@@ -99,7 +99,7 @@ class admin(commands.Cog):
             )
 
             embed.set_footer(text='Coded and designed by Jason!')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
             embed.set_author(name="Coded in Python by Jason")
 
             embed.add_field(name="!shutdown cancel", value="Declines the shutdown request", inline=True)
@@ -118,7 +118,7 @@ class admin(commands.Cog):
             )
 
             embed.set_footer(text='Coded and designed by Jason!')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
             embed.set_author(name="Coded in Python by Jason")
 
             embed.add_field(name="!shutdown cancel", value="Declines the shutdown request", inline=True)

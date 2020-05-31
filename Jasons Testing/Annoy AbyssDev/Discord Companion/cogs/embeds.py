@@ -14,7 +14,7 @@ class embeds(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
         embed.add_field(name=":red_circle: Red", value="Use this emoji for red.")
         embed.add_field(name=":drop_of_blood: Scarlet", value="Use this emoji for scarlet.")
@@ -55,7 +55,7 @@ class embeds(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
         embed.add_field(name=":desktop: Programmer", value="Use this emoji for red.")
         embed.add_field(name=":pencil: Writer", value="Use this emoji for scarlet.")
@@ -76,7 +76,7 @@ class embeds(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
         embed.add_field(name=":white_circle: they/them/theirs", value="Use this emoji for they/them/theirs.")
         embed.add_field(name=":blue_circle: he/him/his", value="Use this emoji for he/him/his.")
@@ -97,7 +97,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="1: No spamming.", value="We would like to keep our chat relatively clean. Please try not to send the same like pieces of text repeadedly.")
             
@@ -111,7 +111,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="2: No NSFW content.", value="Please try not to say anything, or post anything NSFW at all. You CAN be suggestive, just don't outright say anything NSFW.")
             
@@ -125,7 +125,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="3: No harrassment or verbal abuse.", value="Playing around is fine, but please try to be weary of your words.")
             
@@ -139,7 +139,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="4: Keep swearing moderated.", value="Swearing is fine, but try to keep it moderated, including no slurs, etc.")
             
@@ -153,7 +153,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="5: Talk in respective channels.", value="Please leave any off topic chats to the off topic channel, bot comamnds to bot, adverts to advertisement etc.")
             
@@ -168,7 +168,7 @@ class embeds(commands.Cog):
                 colour = discord.Colour.blue()
             )
             embed.set_footer(text='Love from the AbyssDEV Team')
-            embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             embed.add_field(name="1: No spamming.", value="We would like to keep our chat relatively clean. Please try not to send the same like pieces of text repeadedly.")
             embed.add_field(name="2: No NSFW content.", value="Please try not to say anything, or post anything NSFW at all. You CAN be suggestive, just don't outright say anything NSFW.")
@@ -183,7 +183,7 @@ class embeds(commands.Cog):
             )
 
             embed2.set_footer(text='Love from the AbyssDEV Team')
-            embed2.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+            embed2.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
             await ctx.channel.purge(limit=1)
             await ctx.send(embed=embed)
@@ -199,7 +199,7 @@ class embeds(commands.Cog):
             colour = discord.Colour.blue()
         )
         embed.set_footer(text='Love from the AbyssDEV Team')
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/695088637167140888/708149018534084648/original.png')
+        embed.set_thumbnail(url='https://media.discordapp.net/attachments/715985032359182422/716537624763826226/Server_Icon_Abyss.png?width=671&height=684')
 
         embed.add_field(name="Social Media(s)", value="I have none! Just @ me or @jatgm#2482.")
         embed.add_field(name="Preferred name/nickname", value="AbyssBOT (with BOT all caps)")
