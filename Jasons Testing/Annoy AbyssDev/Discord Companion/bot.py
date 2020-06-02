@@ -8,14 +8,14 @@ client = commands.Bot(command_prefix = '!', case_insensitive=True)
 client.remove_command('quit')
 
 statuses = cycle([
-    '!kay | Be Nice!',
-    '!8ball | Jason was here >:D',
-    '!ping | Fork this on GitHub!',
-    '!prune | Treat yourself!',
-    '!purge | I love you! <3',
-    "!help | Thank Jason! <3",
-    "!annoying | Drink water!",
-    'Made with Love by Jason (and feedback from Kay)'])
+    'It will get better! I promise you!',
+    'If this problem won\'t effect you for the next 5 years, stop thinking about it for the next 5 minutes.',
+    'You got this!',
+    'Happy Pride Month!',
+    'You should treat yourself to a break! Maybe, should I suggest, some youtube?',
+    "Get ready for the release of Project: Vencia!",
+    "Bored? You should play Project: Zerithin or Duck Runner!",
+    'Made with Love by Jason (and feedback from Enrica, Saga, Isabelle, and Acren) <3'])
 
 @tasks.loop(seconds=5)
 async def change_status():
