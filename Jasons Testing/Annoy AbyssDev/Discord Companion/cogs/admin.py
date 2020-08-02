@@ -7,7 +7,7 @@ class admin(commands.Cog):
         self.client = client
 
     @commands.command(aliases=['purge'])
-    @commands.has_role('Moderator')
+    @commands.has_role('AbyssDev Team')
     async def prune(self, ctx, amount=0):
         if amount <= 0:
             await ctx.send("> `AbyssBOT:` Missing Arguments: Amount (Usage: !prune/!purge <amount>) (or just ask jason lmao)")
@@ -15,7 +15,7 @@ class admin(commands.Cog):
             await ctx.channel.purge(limit=amount + 1)
     
     @commands.command()
-    @commands.has_role('Moderator')
+    @commands.has_role('AbyssDev Team')
     async def kick(self, ctx, member : discord.Member, *, reason=None): # reads that object as a Member object from import discord
         await member.kick(reason=reason)
         print("{} was kicked for reason: {}".format(member, reason))

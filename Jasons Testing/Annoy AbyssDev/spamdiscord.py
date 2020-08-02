@@ -1,17 +1,60 @@
 import pyautogui
-script = "hanging off my earlobe is a rock"
+from pynput.keyboard import *
 
-#for x in script.split():
-#    pyautogui.write(x)
-#    pyautogui.press("enter", interval=1 )
+#  ======== settings ========
+delay = 0.25  # in seconds
+resume_key = Key.left
+pause_key = Key.right
+exit_key = Key.esc
+#  ==========================
 
-for i in range(1000):
-    pyautogui.write("bruhffefefefefeffefefefefef")
-    for e in range(27):
-        pyautogui.press("backspace")
+pause = True
+running = True
 
-#pyautogui.press("up")
-#pyautogui.hotkey("ctrl", "a")
-#pyautogui.press("delete")
-#pyautogui.press("enter")
-#pyautogui.press("enter")
+def on_press(key):
+    global running, pause
+
+    if key == resume_key:
+        pyautogui.press("delete")
+        pause = False
+        print("[Resumed]")
+    elif key == pause_key:
+        pyautogui.press("delete")
+        pause = True
+        print("[Paused]")
+    elif key == exit_key:
+        running = False
+        print("[Exit]")
+
+
+def display_controls():
+    print("// Jason's Discord Deleter")
+    print("// - Settings: ")
+    print("\t delay = " + str(delay) + ' sec' + '\n')
+    print("// - Controls:")
+    print("\t F1 = Left Arrow Key")
+    print("\t F2 = Right Arrow Key")
+    print("\t F3 = Exit")
+    print("-----------------------------------------------------")
+    print('Press F1 to start ...')
+
+
+def main():
+    lis = Listener(on_press=on_press)
+    lis.start()
+
+    display_controls()
+    while running:
+        if not pause:
+            pyautogui.press("up")
+            pyautogui.hotkey("ctrl", "a")
+            pyautogui.press("delete")
+            pyautogui.press("enter")
+            pyautogui.click(x=1117, y=615)
+            pyautogui.click(x=455, y=1011)
+            pyautogui.PAUSE = delay
+    lis.stop()
+
+
+if __name__ == "__main__":
+    main()
